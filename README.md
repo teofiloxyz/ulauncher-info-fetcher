@@ -1,0 +1,1 @@
+# ulauncher-info-fetcher

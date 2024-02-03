@@ -1,0 +1,43 @@
+{
+  "required_api_version": "2",
+  "name": "Info Fetcher",
+  "description": "Swiftly fetch the info you want from a list",
+  "developer_name": "teofiloxyz",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.05
+  },
+  "preferences": [
+    {
+        "id": "fetch_info",
+        "type": "keyword",
+        "name": "Fetch info from a list",
+        "description": "Fuzzy search info and copy content to clipboard",
+        "default_value": "i"
+	}, {
+        "id": "add_info_item",
+        "type": "keyword",
+        "name": "Fetch info from a list",
+        "description": "Add a new bookmark to the list of filesystem bookmarks",
+        "default_value": "ia"
+	}, {
+        "id": "remove_info_item",
+        "type": "keyword",
+        "name": "Fetch info from a list",
+        "description": "Fuzzy search and remove a bookmark from the list of filesystem bookmarks",
+        "default_value": "ir"
+	}, {
+		"id": "info_list_path",
+		"type": "text",
+		"name": "Info list path",
+		"description": "Path of the json file containing the info list",
+		"default_value": "put path here"
+ 	}, {
+        "id": "max_search_results",
+        "type": "text",
+        "name": "Maximum search results",
+        "description": "Maximum amount of results that appear when fuzzy searching for info items",
+        "default_value": 7
+    }
+  ]
+}

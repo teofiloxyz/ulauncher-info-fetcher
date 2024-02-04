@@ -11,20 +11,20 @@
     {
         "id": "fetch_info",
         "type": "keyword",
-        "name": "Fetch info from a list",
+        "name": "Fetch info",
         "description": "Fuzzy search info and copy content to clipboard",
         "default_value": "i"
 	}, {
         "id": "add_info_item",
         "type": "keyword",
-        "name": "Fetch info from a list",
-        "description": "Add a new bookmark to the list of filesystem bookmarks",
+        "name": "Add info item",
+        "description": "Add a new info item to the list of info items",
         "default_value": "ia"
 	}, {
         "id": "remove_info_item",
         "type": "keyword",
-        "name": "Fetch info from a list",
-        "description": "Fuzzy search and remove a bookmark from the list of filesystem bookmarks",
+        "name": "Remove info item",
+        "description": "Fuzzy search and remove an info item from the list of info items",
         "default_value": "ir"
 	}, {
 		"id": "info_list_path",

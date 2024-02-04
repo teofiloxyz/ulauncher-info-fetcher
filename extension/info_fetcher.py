@@ -70,7 +70,7 @@ class InfoFetcher(Extension):
 
     def refresh_info_list(self, force: bool = False) -> None:
         if not self.info_list or force:
-            self.info_list = InfoList(self.preferences).get_info_list()
+            self.info_list = InfoList().get_info_list()
 
     def _show_message(
         self, title: str, description: str = ""
@@ -168,9 +168,9 @@ class ItemEnterEventListener(EventListener):
             extension.new_info_title = ""
             return extension.add_info_item_title(query="")
         elif option == CustomActionOption.ADD_INFO_CONTENT:
-            InfoList(extension.preferences).add_info_item(data)
+            InfoList().add_info_item(data)
             extension.new_info_title = ""
         elif option == CustomActionOption.REM_INFO:
-            InfoList(extension.preferences).remove_info_item(data)
+            InfoList().remove_info_item(data)
         extension.refresh_info_list(force=True)
         return extension.hide()

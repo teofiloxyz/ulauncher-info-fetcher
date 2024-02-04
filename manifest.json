@@ -26,12 +26,6 @@
         "name": "Remove info item",
         "description": "Fuzzy search and remove an info item from the list of info items",
         "default_value": "ir"
-	}, {
-		"id": "info_list_path",
-		"type": "text",
-		"name": "Info list path",
-		"description": "Path of the json file containing the info list",
-		"default_value": "put path here"
  	}, {
         "id": "max_search_results",
         "type": "text",

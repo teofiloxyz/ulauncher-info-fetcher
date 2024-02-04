@@ -30,7 +30,6 @@ Customize your experience with adjustable settings:
 
 - Keywords Customization: Tailor the keywords to fit your preferences.
 - Search Results Limit: Configure how many results are displayed during a search.
-- Info Items File Path: Don't forget to specify the file path to store the info items.
 
 ## License
 

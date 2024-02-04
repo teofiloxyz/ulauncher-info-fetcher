@@ -1,7 +1,12 @@
 from dataclasses import dataclass
 import json
+import os
 import subprocess
+import sys
 from typing import List, Dict, Optional
+
+EXT_PATH = os.path.dirname(sys.argv[0])
+INFO_PATH = os.path.join(EXT_PATH, "info_list.json")
 
 
 @dataclass
@@ -11,9 +16,6 @@ class InfoItem:
 
 
 class InfoList:
-    def __init__(self, preferences: Dict) -> None:
-        self.info_list_path = preferences["info_list_path"]
-
     def get_info_list(self) -> List[InfoItem]:
         return [
             InfoItem(item["title"], item["content"])
@@ -36,13 +38,13 @@ class InfoList:
 
     def _read_info_list(self) -> List[Dict[str, str]]:
         try:
-            with open(self.info_list_path, "r") as f:
+            with open(INFO_PATH, "r") as f:
                 return json.load(f)
         except FileNotFoundError:
             return []
 
     def _write_info_list(self, info_items: List[Dict[str, str]]) -> None:
-        with open(self.info_list_path, "w") as f:
+        with open(INFO_PATH, "w") as f:
             json.dump(info_items, f, indent=4)
 
 

@@ -1,36 +1,29 @@
-# Ulauncher Info Fetcher
+# Ulauncher Info Fetcher ℹ
 
-## Description
+## Introduction
+**Ulauncher Info Fetcher** is an extension for [Ulauncher](https://ulauncher.io), designed to enhance productivity by allowing to quickly fetch information snippets to the clipboard.
 
-Ulauncher Info Fetcher allows you to swiftly access and manage a customizable list of information snippets. Whether you need to copy a snippet's content to the clipboard, add new items, or remove existing ones, this extension streamlines your workflow without interrupting your focus.
-
-## Features
-
-- **Efficient Information Retrieval:** Instantly search through your info list and copy the content directly to the clipboard.
-- **Dynamic List Management:** Easily add new information snippets or remove outdated ones from your list.
-- **Customizable Settings:** Configure the extension to suit your workflow, including keywords customization and adjusting the number of search results displayed.
-
-## Requirements
-
-- Python 3
 
 ## Installation
+1. Open Ulauncher preferences.
+2. Go to the `Extensions` tab.
+3. Click on `Add extension`.
+4. Paste the URL of this repository:
+```
+https://github.com/teofiloxyz/ulauncher-info-fetcher
+```
 
-To install Ulauncher Info Fetcher, just add the extension from this GitHub repository: https://github.com/teofiloxyz/ulauncher-info-fetcher
 
 ## Usage
-
-- `i`: Search for and copy an info item's content to the clipboard.
+- `i`: Search to fetch an info item's content to the clipboard.
 - `ia`: Add a new info item.
-- `ir`: Remove an existing info item.
+- `ir`: Search to remove an existing info item.
+
 
 ## Configuration
+- Customize all keywords.
+- Set the maximum number of search results displayed.
 
-Customize your experience with adjustable settings:
-
-- Keywords Customization: Tailor the keywords to fit your preferences.
-- Search Results Limit: Configure how many results are displayed during a search.
 
 ## License
-
-GPL 3
+GNU General Public License v3.0.

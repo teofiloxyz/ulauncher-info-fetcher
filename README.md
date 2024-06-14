@@ -4,6 +4,11 @@
 **Ulauncher Info Fetcher** is an extension for [Ulauncher](https://ulauncher.io), designed to enhance productivity by allowing to quickly fetch information snippets to the clipboard.
 
 
+## Demonstration
+![Demo](/images/demo.gif)
+*Animated GIF showing a demo of the extension.*
+
+
 ## Installation
 1. Open Ulauncher preferences.
 2. Go to the `Extensions` tab.
